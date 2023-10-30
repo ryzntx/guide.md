@@ -62,3 +62,5 @@ Implementasi pada tugas codeigniter4
     })
 </script>
 ``````
+*script di simpan pada file template/template.php di posisi atas kode `</body>`*
+*dan pada tombol hapus dapat di implementasikan di file data_mahasiswa.php atau file data_matakuliah.php*
