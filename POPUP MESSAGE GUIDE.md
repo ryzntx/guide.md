@@ -1,9 +1,15 @@
 ### POP-UP Message with alert from javascript without any library
 
+#### Controller
+
 perhatikan baris kode dibawah ini
 
 ```````` php
 return redirect()->to('mahasiswa');
+````````
+atau
+```````` php
+return redirect()->to('matakuliah');
 ````````
 pada setiap controller mahasiswa dan matakuliah memilliki baris kode diatas pada function simpan, update, dan delete
 
@@ -28,8 +34,8 @@ return redirect()->to('mahasiswa')->with('success', 'Masukan pesan disini!');
 
 jadi aplikasi kan cara diatas pada controller mahasiswa dan matakuliah di function simpan, update, dan delete pada baris kode return
 ```````` php
-->  return redirect()->to('mahasiswa')->with('success', 'Masukan pesan disini!');
-->  return redirect()->to('matakuliah')->with('success', 'Masukan pesan disini!');
+->  return redirect()->to('mahasiswa')->with('success', 'Masukan pesan disini!'); //ini buat mahasiswa
+->  return redirect()->to('matakuliah')->with('success', 'Masukan pesan disini!'); //ini buat matakuliah
 ````````
 
 -------------------------------------
@@ -98,10 +104,10 @@ contoh kode yang di file template.php
 </body>
 ``````
 
-contoh kode yang di folder controller file mahasiswa.php
+contoh kode yang di folder controller file mahasiswa.php (ingat jangan di timpah tapi lakukan komparisasi/perbandingan kode dengan punya masing-masing)
 
 `````` php
-public function simpan() { // pada function simpan
+public function simpan() { // pada function simpan,
     return redirect()->to('mahasiswa')->with('success', 'Data berhasil di simpan!');
 }
 public function update() { // pada function update
@@ -113,7 +119,7 @@ public function delete() { // pada function delete
 
 ``````
 
-contoh kode yang di folder controller file matakuliah.php
+contoh kode yang di folder controller file matakuliah.php (ingat jangan di timpah tapi lakukan komparisasi/perbandingan kode dengan punya masing-masing)
 
 `````` php
 public function simpan() { // pada function simpan
