@@ -152,10 +152,11 @@ onclick="return confirmDeleteAlert(event, this)"
 ``````
 
 Contoh implementasi fungsi confirm sweetalert pada sebuah tombol
-
+`````` html
 <a href="<?=base_url('admin/manajemenAkun/hapus/' . $row->id)?>" id="hapusData"
 onclick="return confirmDeleteAlert(event, this)" class="btn btn-sm btn-danger"><i
     class="fa fa-trash"></i></a>
+``````
 
 *script di simpan pada file template/template.php atau tempat code layout di posisi atas kode `</body>`*
 
